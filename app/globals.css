@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f2e9;
+  --foreground: #17215f;
+  --blue: #3548e6;
+  --deep-blue: #174ea6;
+  --cyan: #59c9ee;
+  --cream: #fffaf3;
+  --font-body: "Be Vietnam Pro", "Noto Sans", Arial, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --text-scale: 1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: calc(16px * var(--text-scale)); }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-body); }
+a { color: inherit; text-decoration: none; }
+::selection { background: #3548e6; color: white; }
+
+.page-shell { background: radial-gradient(circle at 10% 0%, rgba(89,201,238,.13), transparent 23%), radial-gradient(circle at 90% 10%, rgba(53,72,230,.08), transparent 26%), var(--background); }
+.display-font { font-family: var(--font-display); }
+
+.grid-paper { background-image: linear-gradient(rgba(53,72,230,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(53,72,230,.035) 1px, transparent 1px); background-size: 34px 34px; }
+
+.card-shadow { box-shadow: 0 16px 40px rgba(31,43,92,.10); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Selected Projects: compact content-height cards. The card grows with its content;
+   there is no fixed height so short and long titles do not create large empty gaps. */
+.project-carousel-track {
+  scroll-padding-inline: 0.25rem;
+}
+
+.project-carousel-card {
+  flex: 0 0 92%;
+}
+
+@media (min-width: 640px) {
+  .project-carousel-card {
+    flex-basis: 76%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-carousel-card {
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+}
+
+/* Professional Projects: three vertical cards across on desktop. */
+.pro-carousel-card {
+  flex: 0 0 82%;
+}
+
+@media (min-width: 640px) {
+  .pro-carousel-card {
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pro-carousel-card {
+    flex-basis: calc((100% - 2rem) / 3);
+  }
+}
+
+/* Compact, equal-size metrics */
+.metric-card {
+  min-width: 0;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(23,33,95,.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,.78);
+  padding: 10px 8px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(31,43,92,.035);
+}
+.metric-value, .metric-label, .metric-detail {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.metric-value { font-size: 1.45rem; line-height: 1.1; font-weight: 700; letter-spacing: -.03em; }
+.metric-meta { display: flex; align-items: baseline; justify-content: center; gap: 4px; width: 100%; min-width: 0; margin-top: 4px; overflow: hidden; white-space: nowrap; }
+.metric-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; line-height: 14px; color: rgba(23,33,95,.65); }
+.metric-detail { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 9px; line-height: 12px; color: rgba(23,33,95,.45); }
+
+/* About profile cards: label above, value below, equal rhythm and content-first hierarchy. */
+.profile-info-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgba(23,33,95,.09);
+  border-radius: 16px;
+  background: rgba(255,255,255,.88);
+  padding: 10px 13px;
+  box-shadow: 0 5px 16px rgba(31,43,92,.035);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.profile-info-card:hover { transform: translateY(-2px); border-color: rgba(53,72,230,.22); box-shadow: 0 9px 22px rgba(31,43,92,.07); }
+.profile-info-label { font-size: 8px; line-height: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(23,33,95,.42); }
+.profile-info-value { margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; line-height: 16px; font-weight: 700; color: #17215f; }
+
+@media (max-width: 639px) {
+  .metric-card { height: 78px; }
+  .profile-info-card { padding: 9px 11px; }
+}
+
+
+/* Portfolio CMS rich-text output */
+.prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.prose th, .prose td { border: 1px solid rgba(23,33,95,.12); padding: .65rem .75rem; text-align: left; vertical-align: top; }
+.prose th { background: #f8f7ff; font-weight: 700; }
+.prose blockquote { border-left: 3px solid #3548e6; padding-left: 1rem; color: rgba(23,33,95,.65); }
+.ProseMirror { min-height: 300px; outline: none; }
+
+/* Rich-text editor + public project details: preserve paragraphs, line breaks,
+   bullets and ordered lists instead of collapsing legacy newline text. */
+.rich-editor-content { white-space: normal; }
+.rich-editor-content p { margin: .65rem 0; line-height: 1.75; white-space: pre-line; }
+.rich-editor-content p:first-child { margin-top: 0; }
+.rich-editor-content p:last-child { margin-bottom: 0; }
+.rich-editor-content ul, .rich-editor-content ol { margin: .75rem 0; padding-left: 1.5rem; }
+.rich-editor-content ul { list-style: disc; }
+.rich-editor-content ol { list-style: decimal; }
+.rich-editor-content li { margin: .2rem 0; padding-left: .15rem; }
+.rich-editor-content li p { margin: 0; }
+.rich-editor-content h2 { margin: 1.25rem 0 .55rem; font-size: 1.35rem; font-weight: 800; line-height: 1.25; }
+.rich-editor-content h3 { margin: 1rem 0 .45rem; font-size: 1.12rem; font-weight: 800; line-height: 1.3; }
+.rich-editor-content blockquote { margin: 1rem 0; border-left: 3px solid #3548e6; padding-left: 1rem; }
+.rich-editor-content .ProseMirror-selectednode { outline: 2px solid #3548e6; }
+
+.project-article { overflow-wrap: anywhere; }
+.project-article p { margin: .7rem 0; line-height: 1.8; white-space: pre-line; }
+.project-article p:first-child { margin-top: 0; }
+.project-article p:last-child { margin-bottom: 0; }
+.project-article ul, .project-article ol { margin: .8rem 0; padding-left: 1.6rem; }
+.project-article ul { list-style: disc; }
+.project-article ol { list-style: decimal; }
+.project-article li { margin: .25rem 0; padding-left: .15rem; line-height: 1.75; }
+.project-article li > p { margin: 0; }
+.project-article h2 { margin: 1.6rem 0 .65rem; font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: 800; line-height: 1.25; }
+.project-article h3 { margin: 1.25rem 0 .55rem; font-size: 1.1rem; font-weight: 800; line-height: 1.3; }
+.project-article .hard-break { display: block; height: .65em; }
+
+.ProseMirror table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.ProseMirror th, .ProseMirror td { border: 1px solid #dbe1ea; padding: .55rem .65rem; min-width: 80px; vertical-align: top; }
+.ProseMirror th { background: #f8fafc; font-weight: 700; }
+.ProseMirror .selectedCell:after { background: rgba(53,72,230,.08); content: ""; inset: 0; pointer-events: none; position: absolute; z-index: 2; }
+
+
+.metric-card-interactive { width: 100%; cursor: pointer; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.metric-card-interactive:hover { transform: translateY(-2px); border-color: rgba(53,72,230,.3); box-shadow: 0 12px 28px rgba(31,43,92,.08); }
+.metric-card-interactive:focus-visible { outline: 3px solid rgba(53,72,230,.35); outline-offset: 3px; }
+.metric-dialog-backdrop { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(14,20,55,.48); backdrop-filter: blur(7px); }
+.metric-dialog { width: min(100%, 620px); max-height: min(82vh, 760px); overflow: hidden; border: 1px solid rgba(255,255,255,.6); border-radius: 24px; background: #fff; box-shadow: 0 24px 80px rgba(10,18,55,.24); }
+@media (prefers-reduced-motion: reduce) { .metric-card-interactive { transition: none; } }
+
+/* Text size control: rem-based Tailwind sizes follow html font-size; scale the fixed px sizes too. */
+.text-\[9px\] { font-size: calc(9px * var(--text-scale)); }
+.text-\[10px\] { font-size: calc(10px * var(--text-scale)); }
+.text-\[11px\] { font-size: calc(11px * var(--text-scale)); }
+.text-\[15px\] { font-size: calc(15px * var(--text-scale)); }
+.text-\[17px\] { font-size: calc(17px * var(--text-scale)); }
+@media (min-width: 640px) { .sm\:text-\[15px\] { font-size: calc(15px * var(--text-scale)); } }
+.profile-info-label { font-size: calc(8px * var(--text-scale)); line-height: 1.4; }
+.profile-info-value { font-size: calc(12px * var(--text-scale)); line-height: 1.35; }
+.metric-label { font-size: calc(10px * var(--text-scale)); }
+.metric-detail { font-size: calc(9px * var(--text-scale)); }
+.profile-info-value.is-wrap { white-space: normal; }
+
+.design-gallery { column-count: 1; column-gap: 1rem; }
+@media (min-width: 640px) { .design-gallery { column-count: 2; } }
+@media (min-width: 1024px) { .design-gallery { column-count: 3; } }
+.design-gallery > * { break-inside: avoid; margin-bottom: 1rem; }
+
+
+/* Scroll reveal (see components/section.tsx) */
+[data-reveal] { transition: opacity .65s cubic-bezier(.22,1,.36,1), transform .65s cubic-bezier(.22,1,.36,1); }
+[data-reveal="pending"] { opacity: 0; transform: translateY(24px); }
+[data-reveal="done"] { opacity: 1; transform: none; }
+
+/* Featured carousel slide change */
+@keyframes featured-in { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+.featured-slide { animation: featured-in .4s cubic-bezier(.22,1,.36,1) both; }

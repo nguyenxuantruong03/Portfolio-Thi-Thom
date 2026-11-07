@@ -1,0 +1,244 @@
+{
+  "projects": [
+    {
+      "id": "expert-branding",
+      "eyebrow": "Client Project · Personal Branding",
+      "title": "Dr. Nguyễn Expert Content Series",
+      "subtitle": "Phát triển kênh TikTok · Sản xuất nội dung · Dựng video",
+      "overview": "Phát triển nội dung TikTok cho bác sĩ nha khoa theo hướng chuyên gia, chuyển hóa kiến thức chuyên môn thành video ngắn dễ hiểu và gần gũi.",
+      "role": [
+        "Lên kế hoạch & viết kịch bản",
+        "Quay & dựng video",
+        "Quản lý nội dung kênh"
+      ],
+      "style": "Dễ thương · Trẻ trung · Năng động · Bắt trend",
+      "workflow": [
+        "Nghiên cứu — Tìm insight",
+        "Ý tưởng — Ý tưởng & kịch bản",
+        "Sản xuất — Quay & dựng",
+        "Phân tích — Đo hiệu suất"
+      ],
+      "tags": [
+        "TikTok",
+        "Content Creation",
+        "Expert Branding",
+        "Video Editing"
+      ],
+      "image": "/images/project-expert.jpg",
+      "category": "professional"
+    },
+    {
+      "id": "filmer",
+      "eyebrow": "Client Project · Video Editing",
+      "title": "The Filmer Photobooth",
+      "subtitle": "Dựng video ngắn · Nội dung TikTok",
+      "overview": "Sản xuất và biên tập video ngắn quảng bá trải nghiệm Photobooth, truyền tải không khí vui tươi, trẻ trung và dễ thương của thương hiệu.",
+      "role": [
+        "Dựng video",
+        "Biên tập nội dung ngắn",
+        "Sắp xếp hình ảnh & âm thanh"
+      ],
+      "style": "Dễ thương · Trẻ trung · Năng động · Bắt trend",
+      "workflow": [
+        "Footage — Chọn lọc cảnh quay",
+        "Cut & Pace — Cắt ghép, nhịp dựng",
+        "Visual — Chữ, hiệu ứng, màu sắc",
+        "Sound — Nhạc nền, âm thanh"
+      ],
+      "tags": [
+        "Video Editing",
+        "TikTok",
+        "Photobooth",
+        "Short-form"
+      ],
+      "image": "/images/project-filmer.jpg",
+      "category": "professional"
+    },
+    {
+      "id": "tiktok",
+      "eyebrow": "Personal Project · TikTok · THITHOMM",
+      "title": "Personal TikTok Channel Development",
+      "subtitle": "Xây dựng và phát triển kênh TikTok @thom.thuii về hành trình niềng răng và trải nghiệm đời sống.",
+      "overview": "34 video trong giai đoạn thống kê 21/03–30/10/2026.",
+      "role": [
+        "Lên kế hoạch nội dung",
+        "Quay & dựng video",
+        "Theo dõi hiệu quả"
+      ],
+      "style": "Kể chuyện · Nội dung hữu ích · Bắt trend",
+      "workflow": [
+        "Nghiên cứu",
+        "Lên ý tưởng",
+        "Sản xuất",
+        "Phân tích"
+      ],
+      "result": "Đạt 341,8K lượt xem, tạo thảo luận về trải nghiệm niềng răng, chi phí và lựa chọn nha khoa.",
+      "tags": [
+        "TikTok",
+        "Personal Brand",
+        "Storytelling",
+        "Lifestyle"
+      ],
+      "image": "/images/project-tiktok.jpg",
+      "stat": "819,4K lượt xem tổng",
+      "category": "personal"
+    },
+    {
+      "id": "food",
+      "eyebrow": "Personal Project · Food & Lifestyle",
+      "title": "Food Review & Lifestyle Content",
+      "subtitle": "Xây dựng và phát triển nội dung TikTok cá nhân",
+      "overview": "Xây dựng kênh TikTok cá nhân chia sẻ trải nghiệm ăn uống, khám phá quán ăn và cà phê theo phong cách trẻ trung, gần gũi.",
+      "role": [
+        "Lên ý tưởng nội dung",
+        "Quay phim",
+        "Dựng video",
+        "Đăng tải"
+      ],
+      "style": "Thẩm mỹ ẩm thực · Khám phá địa điểm · Kể chuyện bằng hình ảnh",
+      "workflow": [
+        "Nghiên cứu",
+        "Lên ý tưởng",
+        "Sản xuất",
+        "Phân tích"
+      ],
+      "result": "Đạt 67,9K lượt xem, thu hút sự quan tâm về giá sỉ, địa chỉ cửa hàng và các loại sản phẩm.",
+      "tags": [
+        "TikTok",
+        "Food Review",
+        "Lifestyle",
+        "Visual Storytelling"
+      ],
+      "image": "/images/project-food.jpg",
+      "stat": "67,9K lượt xem",
+      "category": "personal"
+    },
+    {
+      "id": "fly",
+      "eyebrow": "Personal Project · Travel Content",
+      "title": "Fly Travel Short-form Series",
+      "subtitle": "Kể chuyện du lịch · Trải nghiệm chuyến bay · Video ngắn",
+      "overview": "Concept series mô phỏng nội dung du lịch bằng video ngắn, tập trung vào hành trình bay, trải nghiệm sân bay và những khoảnh khắc dễ tạo cảm hứng cho người xem.",
+      "role": [
+        "Xây dựng concept nội dung",
+        "Dựng video",
+        "Mở đầu thu hút & kể chuyện"
+      ],
+      "style": "Sạch · Năng động · Tập trung trải nghiệm du lịch",
+      "workflow": [
+        "Nghiên cứu — Insight du lịch",
+        "Opening — Cảnh mở đầu",
+        "Dựng — Nhịp & chuyển cảnh",
+        "Đăng — Định dạng video ngắn"
+      ],
+      "tags": [
+        "TikTok",
+        "Travel",
+        "Storytelling",
+        "Short-form"
+      ],
+      "result": "Video demo tập trung vào nhịp nhanh, hình ảnh rõ và storytelling ngắn gọn.",
+      "image": "/images/project-fly.jpg",
+      "videoUrl": "/videos/fly.mp4",
+      "stat": "Dự án demo",
+      "category": "personal"
+    },
+    {
+      "id": "hotel",
+      "eyebrow": "Personal Project · Hospitality",
+      "title": "Hotel Experience Content",
+      "subtitle": "Review khách sạn · Kể chuyện bằng hình ảnh · Video ngắn",
+      "overview": "Series nội dung mô phỏng trải nghiệm khách sạn, từ không gian phòng, tiện ích đến những chi tiết tạo cảm giác đáng nhớ khi lưu trú.",
+      "role": [
+        "Lên kế hoạch nội dung",
+        "Định hướng quay",
+        "Dựng video"
+      ],
+      "style": "Ấm áp · Cao cấp · Thư giãn",
+      "workflow": [
+        "Nghiên cứu — Nhu cầu người xem",
+        "Shot list — Không gian chính",
+        "Dựng — Nhạc & nhịp",
+        "Rà soát — Hoàn thiện nội dung"
+      ],
+      "tags": [
+        "TikTok",
+        "Hotel Review",
+        "Lifestyle",
+        "Visual Storytelling"
+      ],
+      "result": "Dự án demo ưu tiên hình ảnh sạch, chuyển cảnh mềm và cảm giác trải nghiệm.",
+      "image": "/images/project-hotel.jpg",
+      "videoUrl": "/videos/hotel.mp4",
+      "stat": "Dự án demo",
+      "category": "personal"
+    },
+    {
+      "id": "yacht",
+      "eyebrow": "Personal Project · Luxury Lifestyle",
+      "title": "Yacht Lifestyle Content",
+      "subtitle": "Lifestyle cao cấp · Nội dung điểm đến · Video ngắn",
+      "overview": "Series nội dung mô phỏng trải nghiệm yacht theo hướng lifestyle, nhấn vào không gian, chuyển động và cảm giác khám phá một điểm đến đặc biệt.",
+      "role": [
+        "Định hướng sáng tạo",
+        "Dựng video ngắn",
+        "Kể chuyện bằng hình ảnh"
+      ],
+      "style": "Thanh lịch · Điện ảnh · Truyền cảm hứng",
+      "workflow": [
+        "Concept — Góc nhìn lifestyle",
+        "Hình ảnh — Cảnh thiết lập",
+        "Dựng — Nhịp cinematic",
+        "Xuất bản — Định dạng ưu tiên mạng xã hội"
+      ],
+      "tags": [
+        "TikTok",
+        "Yacht",
+        "Luxury Lifestyle",
+        "Cinematic"
+      ],
+      "result": "Dự án demo tập trung vào hình ảnh rộng, nhịp dựng cinematic và cảm giác cao cấp.",
+      "image": "/images/project-yacht.jpg",
+      "videoUrl": "/videos/yartch.mp4",
+      "stat": "Dự án demo",
+      "category": "personal"
+    }
+  ],
+  "featured": [
+    {
+      "id": "featured-01",
+      "topic": "Personal TikTok",
+      "title": "Hành trình niềng răng — kể chuyện thật, dễ đồng cảm",
+      "videoUrl": "",
+      "posterUrl": "/images/project-tiktok.jpg"
+    },
+    {
+      "id": "featured-02",
+      "topic": "Personal Branding",
+      "title": "Biến kiến thức nha khoa thành video ngắn dễ hiểu",
+      "videoUrl": "",
+      "posterUrl": "/images/project-expert.jpg"
+    },
+    {
+      "id": "featured-03",
+      "topic": "Video Editing",
+      "title": "The Filmer Photobooth — kể chuyện bằng video ngắn",
+      "videoUrl": "",
+      "posterUrl": "/images/project-filmer.jpg"
+    },
+    {
+      "id": "featured-04",
+      "topic": "Food & Lifestyle",
+      "title": "Food review — đưa sản phẩm và trải nghiệm vào 3 giây đầu",
+      "videoUrl": "",
+      "posterUrl": "/images/project-food.jpg"
+    },
+    {
+      "id": "featured-05",
+      "topic": "Creative Process",
+      "title": "Nghiên cứu → Ý tưởng → Sản xuất → Phân tích",
+      "videoUrl": "",
+      "posterUrl": "/images/project-expert.jpg"
+    }
+  ]
+}
